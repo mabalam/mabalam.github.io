@@ -81,7 +81,7 @@ analytics:
 # Site Author
 author:
   name             : "Mahbubul Alam, PhD"
-  avatar           : "propic2.png"
+  avatar           : "/images/propic2.png"
   bio              : "I am a forest economist turned data scientist, trained in environmental-economic data analytics. Coming to change the world everywhere"
   location         : "Washington DC"
   employer         :

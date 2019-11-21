@@ -7,10 +7,10 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Mahbubul Alam"
+title                    : "Home"
 title_separator          : "-"
 name                     : &name "Mahbubul Alam, PhD"
-description              : &description "I am a forest economist turned data scientist, trained in environmental-economic data analytics. Coming to change the world everywhere!"
+description              : &description "Forest economist turned data scientist; trained in environmental-economic data analytics; coming to change the world everywhere!"
 url                      : https://mabalam.github.io/ # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "mabalam/mabalam.github.io"

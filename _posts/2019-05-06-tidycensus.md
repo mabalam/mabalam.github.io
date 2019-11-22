@@ -1,5 +1,13 @@
+---
+title: 'Spatial data visualization with `tidycensus`'
+date: 2019-05-06
+#permalink: /posts/2013/08/blog-post-2/
+tags:
+  - tag 1
+  - tag 2
+  - tag 3
+---
 
-## Spatial data visualization with `tidycensus`
 
 **Location! Location! Location!**  
 
@@ -28,7 +36,7 @@ library(tidyverse)
 options(tigris_use_cache = TRUE)
 
 # get your Census Bureau API key
-census_api_key("3fe2c3102c9078f9192c9c8632cb91a505e68b0b")
+census_api_key("API_KEY_HERE")
 ```
 
     To install your API key for use in future sessions, run this function with `install = TRUE`.
@@ -47,14 +55,7 @@ vapop %>%
   scale_fill_viridis_c(option = "viridis", direction=-1) #  original: scale_fill_viridis_c(option = "magma") 
 ```
 
-    Getting data from the 2012-2016 5-year ACS
-    
-
-
-
-
-![png](output_3_2.png)
-
+![](/images/tidycensus/fig1.png)
 
 
 ```R
@@ -80,13 +81,8 @@ varace %>%
 
 ```
 
-    Getting data from the 2010 decennial Census
-    
 
-
-
-
-![png](output_4_2.png)
+![](/images/tidycensus/fig2.png)
 
 
 ## Zooming in on Northern Virginia
@@ -109,13 +105,8 @@ novapop %>%
   scale_fill_viridis_c(option = "viridis", direction=-1) #  original: scale_fill_viridis_c(option = "magma") 
 ```
 
-    Getting data from the 2012-2016 5-year ACS
-    
 
-
-
-
-![png](output_6_2.png)
+![](/images/tidycensus/fig3.png)
 
 
 
@@ -135,20 +126,5 @@ novarace %>%
   scale_fill_viridis_c(option = "magma", direction=-1)
 ```
 
-    Getting data from the 2010 decennial Census
-    Getting data from the 2010 decennial Census
-    Getting data from the 2010 decennial Census
-    Getting data from the 2010 decennial Census
-    Getting data from the 2010 decennial Census
-    Getting data from the 2010 decennial Census
-    Getting data from the 2010 decennial Census
-    Getting data from the 2010 decennial Census
-    Getting data from the 2010 decennial Census
-    Getting data from the 2010 decennial Census
-    
-
-
-
-
-![png](output_7_2.png)
+![](/images/tidycensus/fig4.png)
 

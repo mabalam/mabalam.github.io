@@ -1,3 +1,12 @@
+---
+title: 'Optimizing price, maximizing revenue'
+date: 2019-04-19
+#permalink: /posts/2013/08/blog-post-2/
+tags:
+  - econommics
+  - retail
+  - ecommerce
+---
 
 Setting a right price of products/services is one of the most important decisions a business can make. Under-pricing (and over-pricing) can hurt a company’s bottom line. Two determinants/indicators of business revenue are product prices and quantity sold. At higher price revenue is expected to be higher, if quantity sold is constant. However we know from our everyday experience that price and quantity are inversely related – as the price of something goes up, people show less intent to buy it.
 
@@ -145,7 +154,7 @@ sns.lmplot( x="Price", y="Quantity", data=beef, fit_reg=True, size=4)
 
 
 
-![png](output_8_1.png)
+![](/images/2019-04-19-price-optimization/output_8_1.png)
 
 
 
@@ -218,7 +227,7 @@ plt.plot(profit["Price"], profit["Revenue"])
 
 
 
-![png](output_12_1.png)
+![](/images/2019-04-19-price-optimization/output_12_1.png)
 
 
 

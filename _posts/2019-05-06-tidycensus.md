@@ -3,15 +3,13 @@ title: 'Spatial data visualization with `tidycensus`'
 date: 2019-05-06
 #permalink: /posts/2013/08/blog-post-2/
 tags:
-  - tag 1
-  - tag 2
-  - tag 3
+  - rstats
+  - spatial
+  - tidycensus
 ---
 
 
-**Location! Location! Location!**  
-
-The location people live in tells us a lot about the space itself as well as the people who live in there. This demo is about spatial data visualization with `tidycensus` R package with two variables of interest -- population and race distribution. First we will get the big picture at the Virginia state scale, then will zoom in on northern Virginia in Washington DC metro area.
+**Location! Location!! Location!!** The location people live in tells us a lot about the space itself as well as the people who live in there. This demo is about spatial data visualization with `tidycensus` R package with two variables of interest -- population and race distribution. First we will get the big picture at the Virginia state scale, then will zoom in on northern Virginia in Washington DC metro area.
 
 
 ### Tools

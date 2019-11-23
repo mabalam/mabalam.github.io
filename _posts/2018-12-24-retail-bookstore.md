@@ -1,7 +1,13 @@
+---
+title: 'Predicting the demise of retail bookstores: a time series forecasting'
+date: 2018-12-24
+#permalink: /posts/2013/08/blog-post-2/
+tags:
+  - time series
+  - forecasting
+  - R
+---
 
-# Predicting the demise of retail bookstores: a time series forecasting
-
-## Results and Discussion
 “The internet is killing retail. Bookstores are just the first to go.” -- quoted in the [NYT article](https://nyti.ms/2Eo5AWc). 
 Signs are everywhere. Book World is closing it's stores and Barnes & Noble closed 10% of it's stores in just the last 5/6 years and this February it shedded [1800 jobs](https://bit.ly/2KjLUFf).  
 
@@ -16,7 +22,7 @@ A number of popular forecasting methods are out there, but since the data has se
 So what exactly does the analysis tell? It shows that bookstore sales peaked around 2007, and since then the sales are going downlhill. The HW forecasting predicts that the bookstores may at best survive another 15-20 years from now. This roughly puts the lifeline of bookstores around 2040. That said, some bookstores may well survive beyond 2040, but not as traditional stores, rather as antique books stores.  
 
 
-## Notebook
+## Codes
 
 
 ```R
@@ -31,24 +37,7 @@ library(dplyr)
 options(warn=0)
 ```
 
-    Loading required package: ggplot2
-    Loading required package: forecast
-    Loading required package: fma
-    Loading required package: expsmooth
-    
-    Attaching package: 'dplyr'
-    
-    The following objects are masked from 'package:stats':
-    
-        filter, lag
-    
-    The following objects are masked from 'package:base':
-    
-        intersect, setdiff, setequal, union
-    
-    
-
-
+   
 ```R
 # data import
 df = read.csv("C:/Users/DataS/Google Drive/Python/Datasets/BookSales.csv", skip=6)
@@ -68,19 +57,15 @@ tail(df)[1:5,]
 </table>
 
 
-
-
 ```R
 # keep only the `Value` column
 df = df[, c(2)]
 ```
 
-
 ```R
 # convert the values into a time series object
 series = ts(df, start = 1992, frequency =12)
 ```
-
 
 ```R
 options(repr.plot.width = 6, repr.plot.height = 3)
@@ -91,11 +76,7 @@ xlab(" ") + ylab("Retail sales (million US$)") + ggtitle(" Figure 1: Bookstores 
 theme(plot.title = element_text(size=8))
 ```
 
-
-
-
-![png](output_7_1.png)
-
+![](/images/2018-12-24-retail-bookstore/output_7_1.png)
 
 
 ```R
@@ -106,11 +87,7 @@ annual_sales=aggregate(series, nf=1, FUN=sum) # nf=1 > annual; nf=4 > quarterly;
 autoplot(annual_sales)
 ```
 
-
-
-
-![png](output_8_1.png)
-
+![](/images/2018-12-24-retail-bookstore/output_8_1.png)
 
 
 ```R
@@ -123,11 +100,7 @@ ggtitle("Figure 2: Seasonal sub-series plot (horizontal bars represent monthly m
 theme(plot.title = element_text(size=10))
 ```
 
-
-
-
-![png](output_9_1.png)
-
+![](/images/2018-12-24-retail-bookstore/output_9_1.png)
 
 
 ```R
@@ -141,11 +114,7 @@ ggtitle("Figure 3: The series after removing seasonality" )+
 theme(plot.title = element_text(size=8))
 ```
 
-
-
-
-![png](output_10_1.png)
-
+![](/images/2018-12-24-retail-bookstore/output_10_1.png)
 
 
 ```R
@@ -159,11 +128,7 @@ ggtitle(" Figure 4: Bookstores sales recent trend")+
 theme(plot.title = element_text(size=8))
 ```
 
-
-
-
-![png](output_11_1.png)
-
+![](/images/2018-12-24-retail-bookstore/output_11_1.png)
 
 
 ```R
@@ -174,18 +139,13 @@ theme(plot.title = element_text(size=8))
 
 ```
 
-
-
-
-![png](output_12_1.png)
-
+![](/images/2018-12-24-retail-bookstore/output_12_1.png)
 
 
 ```R
 # model
 # forecast_hw=hw(series_downtime, seasonal="multiplicative", h=63)
 ```
-
 
 ```R
 options(repr.plot.width = 10, repr.plot.height = 3)
@@ -199,27 +159,15 @@ ggtitle("Figure 7: HW Exponential Smoothing")+
 theme(plot.title = element_text(size=8))'''
 ```
 
-
-    Error in parse(text = x, srcfile = src): <text>:4:3: unexpected string constant
-    8: ggtitle("Figure 7: HW Exponential Smoothing")+
-    9: theme(plot.title = element_text(size=8))'
-         ^
-    Traceback:
-    
-
-
-
 ```R
 # predictor series
 predictor_series =  window(series, start=c(2007,1), end=c(2018,10))
 ```
 
-
 ```R
 # model
 forecast_hw=hw(predictor_series, seasonal="multiplicative", h=260)
 ```
-
 
 ```R
 options(repr.plot.width = 10, repr.plot.height = 3)
@@ -233,14 +181,7 @@ ggtitle("Figure 7: HW Exponential Smoothing")+
 theme(plot.title = element_text(size=8))
 ```
 
-    Warning message:
-    "Removed 14 rows containing missing values (geom_path)."
-
-
-
-
-![png](output_17_2.png)
-
+![](/images/2018-12-24-retail-bookstore/output_17_2.png)
 
 
 ```R
@@ -248,7 +189,6 @@ theme(plot.title = element_text(size=8))
 fit.arima = auto.arima(series, seasonal=TRUE, stepwise = FALSE, approximation = FALSE) 
 forecast_arima = forecast(fit.arima, h=160)
 ```
-
 
 ```R
 options(repr.plot.width = 10, repr.plot.height = 3)
@@ -261,11 +201,5 @@ ggtitle(" Figure 9: ARIMA forecasting")+
 theme(plot.title = element_text(size=8))
 ```
 
-    Warning message:
-    "Removed 14 rows containing missing values (geom_path)."
-
-
-
-
-![png](output_19_2.png)
+![](/images/2018-12-24-retail-bookstore/output_19_2.png)
 

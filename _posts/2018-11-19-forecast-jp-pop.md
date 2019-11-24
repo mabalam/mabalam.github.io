@@ -1,4 +1,3 @@
-
 ---
 title: 'Benchmark timeseries forecasting exercise using `wbstats` package'
 date: 2018-11-19

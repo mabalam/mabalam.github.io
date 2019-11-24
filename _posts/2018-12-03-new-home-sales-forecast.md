@@ -1,5 +1,13 @@
 
-# Time Series Analysis & Forecasting of New Home Sales
+---
+title: 'Time Series Analysis & Forecasting of New Home Sales'
+date: 2018-12-03
+#permalink: /posts/2013/08/blog-post-2/
+tags:
+  - timeseries
+  - forecasting
+  - rstat
+---
 
 ## Table of Contents
 1. Introduction
@@ -42,24 +50,6 @@ library(dplyr)
 
 options(warn=0)
 ```
-
-    Loading required package: ggplot2
-    Loading required package: forecast
-    Loading required package: fma
-    Loading required package: expsmooth
-    
-    Attaching package: 'dplyr'
-    
-    The following objects are masked from 'package:stats':
-    
-        filter, lag
-    
-    The following objects are masked from 'package:base':
-    
-        intersect, setdiff, setequal, union
-    
-    
-
 
 ```R
 # data import
@@ -105,12 +95,7 @@ xlab("Time") + ylab("New home sales '000") + ggtitle(" Figure 1: New home sales 
 theme(plot.title = element_text(size=8))
 ```
 
-
-
-
-![png](output_11_1.png)
-
-
+![](/images/2018-12-03-new-home-sales-forecast/output_11_1.png)
 
 ```R
 # Seasonal sub-series plot (the horizontal bar indicates montly mean values)
@@ -122,12 +107,7 @@ ggtitle("Figure 2: Seasonal sbseries plot")+
 theme(plot.title = element_text(size=10))
 ```
 
-
-
-
-![png](output_12_1.png)
-
-
+![](/images/2018-12-03-new-home-sales-forecast/output_12_1.png)
 
 ```R
 options(repr.plot.width = 6, repr.plot.height = 3)
@@ -140,12 +120,7 @@ ggtitle("Figure 3: The series after removing seasonality" )+
 theme(plot.title = element_text(size=8))
 ```
 
-
-
-
-![png](output_13_1.png)
-
-
+![](/images/2018-12-03-new-home-sales-forecast/output_13_1.png)
 
 ```R
 options(repr.plot.width = 6, repr.plot.height = 3)
@@ -158,11 +133,7 @@ ggtitle(" Figure 4: New home sales down time")+
 theme(plot.title = element_text(size=8))
 ```
 
-
-
-
-![png](output_14_1.png)
-
+![](/images/2018-12-03-new-home-sales-forecast/output_14_1.png)
 
 **EDA Summary**
 - Figure 1 shows clear seasonality all through, with a bit of cyclic pattern.
@@ -188,12 +159,7 @@ ggtitle(" Figure 5: Predictor series 2012-2018")+
 theme(plot.title = element_text(size=8))
 ```
 
-
-
-
-![png](output_18_1.png)
-
-
+![](/images/2018-12-03-new-home-sales-forecast/output_18_1.png)
 
 ```R
 # decomposition
@@ -203,20 +169,15 @@ theme(plot.title = element_text(size=8))
 
 ```
 
-
-
-
-![png](output_19_1.png)
+![](/images/2018-12-03-new-home-sales-forecast/output_19_1.png)
 
 
 ### 4.2.2 Forecasting with HW Exponential Smoothing
-
 
 ```R
 # model
 forecast_hw=hw(onwards2012, seasonal="multiplicative", h=63)
 ```
-
 
 ```R
 options(repr.plot.width = 10, repr.plot.height = 3)
@@ -230,12 +191,7 @@ ggtitle("Figure 7: HW Exponential Smoothing")+
 theme(plot.title = element_text(size=8))
 ```
 
-
-
-
-![png](output_22_1.png)
-
-
+![](/images/2018-12-03-new-home-sales-forecast/output_22_1.png)
 
 ```R
 # point forecast for 2023 annual sales of new homes
@@ -244,10 +200,7 @@ forecast2023hw = sum(forecast2023hw)
 round(forecast2023hw)
 ```
 
-
 866
-
-
 
 ```R
 # Diagnostics/accuracy test
@@ -315,12 +268,7 @@ ggtitle(" Figure 8: ETS forecasting")+
 theme(plot.title = element_text(size=8))
 ```
 
-
-
-
-![png](output_28_1.png)
-
-
+![](/images/2018-12-03-new-home-sales-forecast/output_28_1.png)
 
 ```R
 # point forecast
@@ -406,7 +354,7 @@ theme(plot.title = element_text(size=8))
 
 
 
-![png](output_34_1.png)
+![](/images/2018-12-03-new-home-sales-forecast/output_34_1.png)
 
 
 
@@ -491,11 +439,5 @@ autoplot(series, series=" Predictor series 1963-2018")+
 autolayer(hw_series, series=" HW Forecast ")+ylab("New home sales thousands")
 ```
 
-    Warning message in ets(x, "MAM", alpha = alpha, beta = beta, gamma = gamma, phi = phi, :
-    "Missing values encountered. Using longest contiguous portion of time series"
-
-
-
-
-![png](output_41_2.png)
+![](/images/2018-12-03-new-home-sales-forecast/output_41_2.png)
 

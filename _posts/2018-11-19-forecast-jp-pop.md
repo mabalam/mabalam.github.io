@@ -1,5 +1,14 @@
 
-# Benchmark forecasting: Japanese population by 2030
+---
+title: 'Benchmark timeseries forecasting exercise using `wbstats` package'
+date: 2018-11-19
+#permalink: /posts/2013/08/blog-post-2/
+tags:
+  - timeseries
+  - forecasting
+  - rstats
+---  
+
 
 I'm deliberately avoiding forecasting theories here. If you are interested in theories, plenty of materials are out there (see [Rob Hyndsman's](https://robjhyndman.com/) extensive work, for example). Instead, in this series I'll to do lot's of forecasting with many different types and shapes of real world data. I'll pick a dataset, do some analysis. Along the way I may explain why I' m doing what I'm doing; but no theories. 
 
@@ -21,18 +30,7 @@ library(wbstats)
 library(dplyr)
 ```
 
-    
-    Attaching package: 'dplyr'
-    
-    The following objects are masked from 'package:stats':
-    
-        filter, lag
-    
-    The following objects are masked from 'package:base':
-    
-        intersect, setdiff, setequal, union
-    
-    
+ 
 
 
 ```R
@@ -77,7 +75,7 @@ plot(jppop$value~jppop$date)
 ```
 
 
-![png](output_9_0.png)
+![](/images/2018-11-19-forecast-jp-pop/output_9_0.png)
 
 
 
@@ -119,7 +117,7 @@ autoplot(data) + ggtitle("Population trend in Japan") + xlab("Year") +  ylab("Mi
 
 
 
-![png](output_15_1.png)
+![](/images/2018-11-19-forecast-jp-pop/output_15_1.png)
 
 
 From this plot alone we can say a lot about population in Japan, some are obvious from the figure while some needs little digging. Here's a few:
@@ -152,7 +150,7 @@ autolayer(data.ets, series = "Automatic ETS forecast", PI=FALSE)
 
 
 
-![png](output_18_1.png)
+![](/images/2018-11-19-forecast-jp-pop/output_18_1.png)
 
 
 These forecasting results can be interpreted in many ways. First it doesn't look like RW or mean model looks any plausible, may in the longer term but not for the next 13 years period. On the other hand the other 3 forecasts look really plausible. But let's watch what all the forecast values are

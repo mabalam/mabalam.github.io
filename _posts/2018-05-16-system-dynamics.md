@@ -12,7 +12,7 @@ A system dynamic model represents a complex system in terms of stocks & flows an
 
  
 
-![](/images/misc/system-dynamics.png]
+![](/images/misc/system-dynamics.png)
 
  
 

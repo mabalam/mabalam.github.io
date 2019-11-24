@@ -1,4 +1,3 @@
-
 ---
 title: 'Time Series Analysis & Forecasting of New Home Sales'
 date: 2018-12-03
@@ -8,6 +7,7 @@ tags:
   - forecasting
   - rstat
 ---
+
 
 ## Table of Contents
 1. Introduction

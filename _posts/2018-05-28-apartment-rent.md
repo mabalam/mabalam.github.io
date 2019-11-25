@@ -14,7 +14,7 @@ A non-random sample of 100 apartments were chosen, of which 45 apartments are wi
 ![](/images/misc/apartment-rent1.PNG)
 
 ### Main results
-Mean apartment rents near metro stations (within 20 minutes walking distance) is $2,266 and apartments farther away is rented out at $1,893 per month. This means you need to be ready to pay an additional amount of $300 if you want to take advantage of metro stations for daily commutes. To generalize (if I may): apartment rents are 15% higher near metro stations than local average.
+Mean apartment rents near metro stations (within 20 minutes walking distance) is USD 2,266 and apartments farther away is rented out at USD 1,893 per month. This means you need to be ready to pay an additional amount of USD 300 if you want to take advantage of metro stations for daily commutes. To generalize (if I may): apartment rents are 15% higher near metro stations than local average.
 
 ![](/images/misc/apartment-rent2.jpg)
 

@@ -18,7 +18,7 @@ And this leads to the second kind of situation you might find yourself in. You h
 
 If you are experienced enough you will probably subconscously know what your next steps are. But if you are a newbie yo may not know. In any case here is a pretty algorithmic way to think about the problem to solution.
 
-![](/images/misc/ds-cycle.png)
+![Project cycle in data scinece (@DataEnthus)](/images/misc/ds-cycle.png)
 
 In step 1, you have a question or a problem. You could break it down to seveal smaller pieces of problems if needed. For example, if the question is forecasting how the company sales will gro in next 10 years, you could break it down to smaller pieces like how's the sales trending? How's the demand trending in the market? Etc.
 

@@ -1,22 +1,20 @@
 As a data scientist in an organization you could be in a couple of situations:  
-1) you have a dataset, you want get some insights out of it
-2) you have a business problem, you need to find a solution
+1) you have a dataset, you want to mine it for insights
+2) you have a business problem, you want to find a solution
 
 [NEED SOME INTRO]. 
 
-The first situation is a common one. Every organization generates data, often in large amount, on different aspects of business operations such as product sales, revenue, cost, employees info etc. Let's say you've just joined an organization as a junior data scientist and you're yet to start your first project. One morning the project manager/someone from sales showed up at your desk and says - hey, welcome to the organization; we are excited to have you onboard! I have this data siting in my computer for sometime, can you see what you can do with it?
+The first situation is a common one. Often in large amount, every organization generates data on different aspects of business operations such as sales, revenue, cost, employee info etc. Let's say you've just joined an organization as a junior data scientist and you're yet to start your first project. One morning the product manager/someone from sales showed up at your desk and says - hey, welcome to the organization; we are excited to have you onboard! I have this data siting in my computer for sometime, can you see what you can do with it?
 
-You get the data now you are thinking what to do with it? 
+You get the data. Now you are thinking what to do with it? You have several options, with different levels of complexity. 
 
-You have several options, with different levels of complexity. 
+Describing the data is the most basic thing you could do. You could see if there are any problems with the dataset such as missing values, any outliers (as aresult of a mistake in data inputs). You could generate some basic statistics (e.g. mean, mediun, min-max, distribution etc.). You could also visualize variables that are interesting. And so on. This is basically all you have learnt and done as a data scientist all your life, known as exploratory data analysis (EDA).  
 
-Describing the data is the most basic thing you could do. You could generate some basic statistics (data shape, mean, distribution). You could also visualize variables that are of interest interesting. You could see if there are any problems with the dataset such as missing values, any outliers (as aresult of a mistake in data inputs). And so on. This is basically all you have learnt and did all your data science life in exploratory data analysis (EDA).  
+At the next level of complexity you are asking a good question and answering it. Remember that you are asking a question, not thinking what model to fit; not just yet. If it's an emplyee dataset you could ask: what is the composition of the employees in the organization in terms of gender & race? Or what is the salary distribution? Are there some odds that you discovered and want to highlight to the management? Most organizations will have already known them basic questions but you get the idea how to ask a question.  
 
-The next level of complexity is asking a good question of the data set and answering it. Remember we are asking a question, not thinking what model to fit just yet. If it's an emplyee data set you could ask: what is the composition of the employees in the organization in terms of gender & race? Or what is the salary distribution? Are there some odds that you discover and want to highlight to the management? Most organizations will already have known these basic info summarized but you get the idea how to ask a question and not how to apply a tool.  
+The third level of complexity is a difficult one. You may not be able to discover anything until you studied the data well and understand the business as a whole. As you spend more time in the org and become familiar with it's business practices, along the way you will develop hypotheses. A single dataset that you now have may not answer your question, but you may need to pull together information from various sources to test your hypotheses.
 
-The third level of complexity is a tough one. You may not be able to discover anything until you studied the data well and understand the business as a whole. As you spend more time in the org and become familiar with it's business practices, along the way you will develop hypotheses. A single dataset that you now have may not answer your question, but you may need to pull together information from various sources to test your hypotheses.
-
-And this leads to the second kind of situation you might find yourself in. You have been long enough in the org to know its ins and outs and it's data. And you developed a hypothesis/question along the way you need answer for. Or, just may be your manager/CEO/CTO/CFO is asking you to get an answer for a question they were having trouble with.
+And this leads to the second kind of situation you might find yourself in. You have been long enough in the org to know its ins and outs. And you developed a hypothesis/question along the way. Or, just may be your manager/CEO/CTO/CFO is asking you to get an answer for a question they were having trouble with.
 
 If you are experienced enough you will probably subconscously know what your next steps are. But if you are a newbie yo may not know. In any case here is a pretty algorithmic way to think about the problem to solution.
 

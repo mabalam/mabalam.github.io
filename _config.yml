@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Home"
 title_separator          : "-"
 name                     : &name "Mahbubul Alam, PhD"
-description              : &description "Forest economist turned data scientist; trained in environmental-economic data analytics; coming to change the world everywhere!"
+description              : &description "Forest economist turned data scientist; trained in environmental-economic data analytics"
 url                      : https://mabalam.github.io/ # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "mabalam/mabalam.github.io"
@@ -82,7 +82,7 @@ analytics:
 author:
   name             : "Mahbubul Alam, PhD"
   avatar           : "propic2.jpg"
-  bio              : "Forest economist turned data scientist; trained in environmental-economic data analytics; coming to change the world"
+  bio              : "Forest economist turned data scientist; trained in environmental-economic data analytics"
   location         : "Washington DC"
   employer         :
   pubmed           : # "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"

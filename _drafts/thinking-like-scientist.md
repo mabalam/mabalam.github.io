@@ -8,7 +8,7 @@ The first situation is actually a common one, basically doing all the things you
 
 Let's say you have been long enough in your organization to know its business practices and all the kinds of data it generates. And along the way you have developed a hypothesis that you want to test. Or, just may be your manager/CEO/CTO is asking you to get an answer to a question they were having trouble with. If you are experienced enough you will probably know what your next steps are, but newbies often struggle to kick off their thinking in the right direction. So here is a pretty algorithmic way to think about the problem through to solution.
 
-![Project cycle in data scinece (@DataEnthus)](/images/misc/ds-cycle.png)
+![Project cycle in data scinece (@DataEnthus)](/images/misc/ds-cycle1.png)
 
 In step 1, you have a question or problem. If it's a big one, you could break it down to smaller pieces if needed. For example, if the question is about forecasting sales growth over the next 10 years, you could break it down to pieces such as what's been the historical sales? How's the sales currently trending? How's the demand trending in the market? How are the competitors doing? Etc.
 

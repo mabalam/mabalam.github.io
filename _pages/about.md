@@ -13,4 +13,4 @@ I am an interdisciplinary quantitative scientist based in Washington DC. I find 
 Recent article: [My journey as a quantitative scientist](https://mabalam.github.io//my-journey/)  
 Forthcoming article: **A data science project cycle**  
 Thinking about: 
-```A bit counter-intuitive and can be controversial: Is there a flip side of wide-spread "free" stuff in information technology? Why big companies give away some version of their software products for free? And who are the *ultimate* beneficiaries of crowd-sourced, free online labor market (i.e. online forums)?```
+> A bit counter-intuitive and can be controversial: Is there a flip side of wide-spread "free" stuff in information technology? Why big companies give away some version of their software products for free? And who are the *ultimate* beneficiaries of crowd-sourced, free online labor market (i.e. online forums)?

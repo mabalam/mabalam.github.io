@@ -2,10 +2,9 @@
 title: 'My journey as a quantitative scientist'
 date: 2019-12-04
 #permalink: /posts/2013/08/blog-post-2/
-#tags:
-  - rstats
-  - spatial
-  - tidycensus
+tags:
+  #- rstats
+  #- spatial
 ---
 
 This is a not-so-brief history of my research journey from 20 years ago, when I was an undergrad, to where I am today in (almost) 2020 (I am 39 btw).

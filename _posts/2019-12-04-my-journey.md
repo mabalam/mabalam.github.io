@@ -7,7 +7,7 @@ tags:
   #- spatial
 ---
 
-This is a not-so-brief history of my research journey from 20 years ago, when I was an undergrad, to where I am today in (almost) 2020 (I am 39 btw).
+This is a not-so-brief history of my research journey that took off when I was an undergrad, that continued in grad school & postdoc, to where I am today in 8+ years of my post-PhD career.
 
 I did my undergrad in forest resource management. It was all about understanding the different kinds of forests and how to manage them properly to optimize multi-purpose goals of production, income and environmental sustainability. A lot of my undergrad work was field based, basically going into forests, collecting all kinds of data on tree height, diameter, etc, then analyzing them and creating biometric models to predict future growth and utilization of forest resources and suggest different management options.
 

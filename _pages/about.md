@@ -16,5 +16,5 @@ machine learning fields, to social science, to Goegraphical Information Systems 
 I have worked in 4 different continents and my 20+ technical writings have appeared in   
 international journals.
 
-Read: [My journey as a quantitative scientist](/_posts/2019-12-04-my-journey.md/)
+Read: [My journey as a quantitative scientist](https://mabalam.github.io//my-journey/)
 

@@ -13,4 +13,6 @@ I am an interdisciplinary quantitative scientist based in Washington DC. I find 
 More about me:  
 [My journey as a quantitative scientist](https://mabalam.github.io//my-journey/)  
 Recent article at Towards Data Science:  
-[A data science project cycle: How to focus more on problems and less on tools](https://towardsdatascience.com/a-data-science-project-cycle-af5a1cdef14f)
+[A data science project cycle: How to focus more on problems and less on tools](https://towardsdatascience.com/a-data-science-project-cycle-af5a1cdef14f)  
+
+**To get in touch:** mab.datasc[at]gmail[dot]com

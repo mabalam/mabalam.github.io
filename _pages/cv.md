@@ -16,7 +16,7 @@ redirect_from:
 
 ## SUMMARY OF EXPERIENCES
 
-**Research Economist, Conservation International, Arlington VA, USA**  
+**Research Economist, Arlington VA, USA**  
 *May 2014 - date*
 - Designed research projects for specific programs and policy development
 - Led project oriented data collection, data management and analysis
